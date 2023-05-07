@@ -21,11 +21,12 @@ ssh-keygen -t ed25519 -C "pyotrantropov@gmail.com"
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
+ssh -T git@github.com
 
+# Add Repository
 git remote add origin git@github.com:pyotrantropov/practising-git1.git
 git remote add origin https://github.com/pyotrantropov/practising-git1.git
 
-ssh -T git@github.com
 git remote add origin git@github.com:pyotrantropov/practising-git1.git
 git remote -h
 git remote remove origin
@@ -33,3 +34,5 @@ git remote add origin git@github.com:pyotrantropov/practising-git1.git
 git push -u origin master 
 
 git remote -l
+git remote -v
+git config --list
