@@ -24,3 +24,12 @@ ssh-add ~/.ssh/id_ed25519
 
 git remote add origin git@github.com:pyotrantropov/practising-git1.git
 git remote add origin https://github.com/pyotrantropov/practising-git1.git
+
+ssh -T git@github.com
+git remote add origin git@github.com:pyotrantropov/practising-git1.git
+git remote -h
+git remote remove origin
+git remote add origin git@github.com:pyotrantropov/practising-git1.git
+git push -u origin master 
+
+git remote -l
