@@ -36,3 +36,8 @@ git push -u origin master
 git remote -l
 git remote -v
 git config --list
+
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
